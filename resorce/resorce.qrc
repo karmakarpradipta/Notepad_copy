@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>notepad-16.png</file>
+    <file>../notepad-24.png</file>
+    <file>../notepad-48.png</file>
+  </qresource>
+</RCC>
