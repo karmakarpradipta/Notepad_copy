@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resorce/resorce.qrc">
+    <normaloff>:/icons/icons/notepad-24.png</normaloff>:/icons/icons/notepad-24.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <property name="leftMargin">
@@ -279,6 +283,9 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="D:/Practise/Windows_app_devlopment/resorce/icon.qrc"/>
+  <include location="resorce/resorce.qrc"/>
+ </resources>
  <connections/>
 </ui>
