@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QLabel,QVBoxLayout,QSpacerItem,QSizePolicy,QFrame
 from PySide6.QtCore import QCoreApplication
+from PySide6.QtGui import QResizeEvent
 
 class StatusBarInfo(QWidget):
     def __init__(self):
@@ -9,13 +10,6 @@ class StatusBarInfo(QWidget):
         self.horizontalLayout = QHBoxLayout(self)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)     
-
-
-        # Create a top border frame
-        self.topBorderFrame = QFrame(self)
-        self.topBorderFrame.setFrameShape(QFrame.HLine)
-        self.topBorderFrame.setFrameShadow(QFrame.Sunken)
-        self.topBorderFrame.setStyleSheet("color: rgb(0, 210, 210);")
 
         # Add QLabel widgets to the horizontal layout
         self.ql_cordinate = QLabel()
@@ -46,8 +40,6 @@ class StatusBarInfo(QWidget):
         self.ql_text_encoding.setFixedSize(100, 15)
         self.horizontalLayout.addWidget(self.ql_text_encoding)
 
-        # Add the top border frame to the layout
-        self.horizontalLayout.addWidget(self.topBorderFrame)
         self.retranslateUi()
 
 
